@@ -1,0 +1,14 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+.idea/
+.vscode
+.yarn/*
+!.yarn/releases
+coverage
+CHANGELOG.md

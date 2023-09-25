@@ -19,7 +19,10 @@ function getItem(key: string) {
     >
       <li v-for="(key, index) in Object.keys(props.items)" :key="index">
         <span class="font-medium">{{ key }}:</span>
-        <ListLoop v-if="Array.isArray(getItem(key))" :items="props.items[key]" />
+        <ListLoop
+          v-if="Array.isArray(getItem(key))"
+          :items="props.items[key]"
+        />
         <template v-else>
           {{ getItem(key) }}
         </template>
