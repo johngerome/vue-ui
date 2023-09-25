@@ -1,3 +1,11 @@
+# 1.0.0 (2023-09-25)
+
+
+### Bug Fixes
+
+* bump pnpm-lock.yaml ([1e48abf](https://github.com/johngerome/vue-ui/commit/1e48abf129d83c2906f06c15b713e7937698ed15))
+* initial commit ([dcf6c45](https://github.com/johngerome/vue-ui/commit/dcf6c45dd5d0b91e6f781309468b33703c504cd0))
+
 ## [1.0.3-beta.2](https://github.com/johngerome/vue-ui/compare/v1.0.3-beta.1...v1.0.3-beta.2) (2023-09-25)
 
 ### Bug Fixes
