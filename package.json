@@ -31,9 +31,9 @@
     "access": "public"
   },
   "dependencies": {
-    "clsx": "^2.0.0",
-    "tailwind-merge": "^1.14.0",
-    "vue": "^3.3.4"
+    "clsx": "2.0.0",
+    "tailwind-merge": "1.14.0",
+    "vue": "3.3.4"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
