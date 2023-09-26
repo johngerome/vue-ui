@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/johngerome/vue-ui/compare/v1.1.0...v1.1.1) (2023-09-26)
+
+
+### Bug Fixes
+
+* **button:** change loading ui ([90d205d](https://github.com/johngerome/vue-ui/commit/90d205dc2e3e7b01ff2cbf497d773ceeabec6fb1))
+
 # [1.1.0](https://github.com/johngerome/vue-ui/compare/v1.0.0...v1.1.0) (2023-09-26)
 
 
