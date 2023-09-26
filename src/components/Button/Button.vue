@@ -20,6 +20,13 @@ export const THEME = {
   disabled: 'opacity-50 cursor-not-allowed',
   variants: VARIANTS,
   sizes: SIZES,
+  loadingIcon: {
+    sm: 'text-sm',
+    md: 'text-base',
+    lg: 'text-lg',
+    xl: 'text-xl',
+    '2xl': 'text-2xl',
+  },
 }
 </script>
 
@@ -64,6 +71,9 @@ const variantsClass = computed(() =>
   get(props.theme.variants, props.variant, 'variant'),
 )
 const sizesClass = computed(() => get(props.theme.sizes, props.size, 'size'))
+const loadingClass = computed(() =>
+  get(props.theme.loadingIcon, props.size, 'size'),
+)
 </script>
 
 <template>
@@ -84,13 +94,12 @@ const sizesClass = computed(() => get(props.theme.sizes, props.size, 'size'))
     <slot name="loading">
       <Icon
         v-show="props.isLoading"
-        icon="eos-icons:three-dots-loading"
-        class="absolute"
+        icon="line-md:loading-twotone-loop"
+        :class="loadingClass"
+        class="mr-3"
       />
     </slot>
 
-    <span :class="{ invisible: props.isLoading }">
-      <slot />
-    </span>
+    <slot />
   </button>
 </template>
