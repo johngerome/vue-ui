@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/johngerome/vue-ui/compare/v1.1.3...v1.1.4) (2023-09-26)
+
+
+### Bug Fixes
+
+* **chore:** remove options for @semantic-release/github ([70cd3e4](https://github.com/johngerome/vue-ui/commit/70cd3e42c16a10e9482b6c8d84bf4343e6e3e2bb))
+
 ## [1.1.3](https://github.com/johngerome/vue-ui/compare/v1.1.2...v1.1.3) (2023-09-26)
 
 
