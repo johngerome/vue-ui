@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/johngerome/vue-ui/compare/v1.1.5...v1.1.6) (2023-09-26)
+
+
+### Bug Fixes
+
+* **button:** lessen the variants ([b92f55f](https://github.com/johngerome/vue-ui/commit/b92f55f2ff0383af39a8778a56d41750cf0af4bb))
+
 ## [1.1.5](https://github.com/johngerome/vue-ui/compare/v1.1.4...v1.1.5) (2023-09-26)
 
 
