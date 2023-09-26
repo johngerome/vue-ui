@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/johngerome/vue-ui/compare/v1.1.4...v1.1.5) (2023-09-26)
+
+
+### Bug Fixes
+
+* add eslint and fix eslint issues ([296fe6e](https://github.com/johngerome/vue-ui/commit/296fe6ed6853d94ea6971a65e3700c9033f98b0f))
+
 ## [1.1.4](https://github.com/johngerome/vue-ui/compare/v1.1.3...v1.1.4) (2023-09-26)
 
 
