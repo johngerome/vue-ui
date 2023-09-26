@@ -24,25 +24,11 @@ defineProps<Props>()
       <Button size="2xl">Button</Button>
     </div>
     <div class="flex items-center space-x-2">
-      <Button variant="secondary" size="sm">Button</Button>
-      <Button variant="secondary" size="md">Button</Button>
-      <Button variant="secondary" size="lg">Button</Button>
-      <Button variant="secondary" size="xl">Button</Button>
-      <Button variant="secondary" size="2xl">Button</Button>
-    </div>
-    <div class="flex items-center space-x-2">
-      <Button variant="secondary-outline" size="sm">Button</Button>
-      <Button variant="secondary-outline" size="md">Button</Button>
-      <Button variant="secondary-outline" size="lg">Button</Button>
-      <Button variant="secondary-outline" size="xl">Button</Button>
-      <Button variant="secondary-outline" size="2xl">Button</Button>
-    </div>
-    <div class="flex items-center space-x-2">
-      <Button variant="primary-outline" size="sm">Button</Button>
-      <Button variant="primary-outline" size="md">Button</Button>
-      <Button variant="primary-outline" size="lg">Button</Button>
-      <Button variant="primary-outline" size="xl">Button</Button>
-      <Button variant="primary-outline" size="2xl">Button</Button>
+      <Button variant="outline" size="sm">Button</Button>
+      <Button variant="outline" size="md">Button</Button>
+      <Button variant="outline" size="lg">Button</Button>
+      <Button variant="outline" size="xl">Button</Button>
+      <Button variant="outline" size="2xl">Button</Button>
     </div>
     <div class="flex items-center space-x-2">
       <Button variant="link" size="sm">Button</Button>

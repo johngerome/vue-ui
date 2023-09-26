@@ -1,20 +1,17 @@
 <script lang="ts">
 export const VARIANTS = {
-  primary: 'bg-primary text-gray-200 hover:bg-primary/90',
-  secondary: 'bg-secondary text-gray-200 hover:bg-secondary/90',
-  'primary-outline':
-    'border border-primary text-primary hover:bg-primary hover:text-gray-200',
-  'secondary-outline':
-    'border border-secondary text-secondary hover:bg-secondary hover:text-gray-200',
+  primary: 'bg-primary text-gray-100 hover:bg-primary/90',
+  outline:
+    'border border-primary/30 text-primary hover:bg-primary hover:text-gray-100',
   ghost: 'text-primary hover:bg-primary/10',
   link: 'text-primary hover:underline',
 }
 export const SIZES = {
-  sm: 'p-1 text-xs',
-  md: 'py-2 px-3 text-base',
-  lg: 'p-3 text-lg',
-  xl: 'p-4 text-xl',
-  '2xl': 'p-6 text-xl',
+  sm: 'px-2 py-1 text-xs rounded',
+  md: 'py-2 px-3 text-base rounded-md',
+  lg: 'p-3 text-lg rounded-md',
+  xl: 'p-4 text-xl rounded-lg',
+  '2xl': 'p-6 text-xl rounded-lg',
 }
 export const THEME = {
   disabled: 'opacity-50 cursor-not-allowed',
@@ -22,10 +19,10 @@ export const THEME = {
   sizes: SIZES,
   loadingIcon: {
     sm: 'text-sm',
-    md: 'text-base',
-    lg: 'text-lg',
-    xl: 'text-xl',
-    '2xl': 'text-2xl',
+    md: 'text-lg',
+    lg: 'text-xl',
+    xl: 'text-2xl',
+    '2xl': 'text-3xl',
   },
 }
 </script>
@@ -69,7 +66,7 @@ const loadingClass = computed(() =>
     :type="(attrs?.type as ButtonHTMLAttributes['type']) || 'button'"
     :class="
       cn(
-        'rounded flex items-center',
+        'transition-colors flex items-center font-medium focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none',
         { [THEME.disabled]: props.disabled || props.isLoading },
         attrs?.class || '',
         variantsClass,

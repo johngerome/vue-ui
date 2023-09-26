@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { ListLoop } from '@/components'
 import UiButton from '@/ui/Button.vue'
 </script>
 
 <template>
-  <div class="space-y-8">
-    <ListLoop :items="['test 1', 'test 2']" />
+  <div class="space-y-8 w-full max-w-[1024px] mx-auto">
     <UiButton>UiButton</UiButton>
   </div>
 </template>
