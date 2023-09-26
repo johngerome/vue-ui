@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/johngerome/vue-ui/compare/v1.0.0...v1.1.0) (2023-09-26)
+
+
+### Features
+
+* add button component ([0092441](https://github.com/johngerome/vue-ui/commit/0092441581c150ee832a212caa323232f5686f1e))
+
 # 1.0.0 (2023-09-25)
 
 
