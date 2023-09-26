@@ -31,48 +31,35 @@ export const THEME = {
 </script>
 
 <script lang="ts" setup>
-import { ButtonHTMLAttributes, PropType, computed, useAttrs } from 'vue'
+import { ButtonHTMLAttributes, computed, useAttrs } from 'vue'
 import { Icon } from '@iconify/vue'
 import { cn, get } from '@/util/cn'
 
 export type Props = {
-  theme?: keyof typeof THEME
+  theme?: typeof THEME
   size?: keyof (typeof THEME)['sizes']
   variant?: keyof (typeof THEME)['variants']
   disabled?: boolean
   isLoading?: boolean
+  useCustomLoading?: boolean
 }
 
 const attrs = useAttrs()
-const props = defineProps({
-  theme: {
-    type: Object as PropType<typeof THEME>,
-    default: () => THEME,
-  },
-  size: {
-    type: String,
-    default: 'md',
-  },
-  variant: {
-    type: String,
-    default: 'primary',
-  },
-  disabled: {
-    type: Boolean,
-    default: false,
-  },
-  isLoading: {
-    type: Boolean,
-    default: false,
-  },
+const props = withDefaults(defineProps<Props>(), {
+  size: 'md',
+  variant: 'primary',
+  disabled: false,
+  isLoading: false,
+  useCustomLoading: false,
 })
 
+const theme = computed(() => props.theme || THEME)
 const variantsClass = computed(() =>
-  get(props.theme.variants, props.variant, 'variant'),
+  get(theme.value.variants, props.variant, 'variant'),
 )
-const sizesClass = computed(() => get(props.theme.sizes, props.size, 'size'))
+const sizesClass = computed(() => get(theme.value.sizes, props.size, 'size'))
 const loadingClass = computed(() =>
-  get(props.theme.loadingIcon, props.size, 'size'),
+  get(theme.value.loadingIcon, props.size, 'size'),
 )
 </script>
 
@@ -91,7 +78,7 @@ const loadingClass = computed(() =>
     :disabled="props.disabled || props.isLoading"
     :title="(attrs?.title as string) || 'Button'"
   >
-    <slot name="loading">
+    <slot v-if="!props.useCustomLoading" name="loading">
       <Icon
         v-show="props.isLoading"
         icon="line-md:loading-twotone-loop"

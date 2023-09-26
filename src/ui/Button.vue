@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 // import { THEME } from '@/components/Button/Button.vue'
-import { Button } from '@/components'
+import Button from '@/components/Button/Button.vue'
 import { Props } from '@/components/Button/Button.vue'
 
 defineProps<Props>()
@@ -51,6 +51,13 @@ defineProps<Props>()
       <Button variant="primary" size="lg" is-loading>Button</Button>
       <Button variant="primary" size="xl" is-loading>Button</Button>
       <Button variant="primary" size="2xl" is-loading>Button</Button>
+      <Button is-loading class="flex-row-reverse">
+        <span class="mr-3">Button</span>
+        <template #loading></template>
+      </Button>
+      <Button class="flex-row-reverse" is-loading use-custom-loading>
+        Button...
+      </Button>
     </div>
   </div>
 </template>
