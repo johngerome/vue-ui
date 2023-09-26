@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 import { cn } from '@/util/cn'
 
+type Item = Record<string, string | string[]>
 type Props = {
-  items: Record<string, any> | any[]
+  items: Item | Item[] | string[] | string
 }
 
 const props = defineProps<Props>()

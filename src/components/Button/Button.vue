@@ -51,6 +51,7 @@ const props = withDefaults(defineProps<Props>(), {
   disabled: false,
   isLoading: false,
   useCustomLoading: false,
+  theme: () => THEME,
 })
 
 const theme = computed(() => props.theme || THEME)
