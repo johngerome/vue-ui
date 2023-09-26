@@ -26,7 +26,10 @@
     "lint:prettier": "prettier --check .",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
     "lint:fix": "prettier --write --list-different .",
-    "lint": "npm run lint:js && npm run lint:prettier"
+    "lint": "npm run lint:js && npm run lint:prettier",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "repository": {
     "type": "git",
@@ -60,6 +63,9 @@
     "husky": "^8.0.3",
     "path": "^0.12.7",
     "postcss": "^8.4.30",
+    "postcss-loader": "^7.3.3",
+    "postcss-prefix-selector": "^1.16.0",
+    "postcss-preset-env": "^9.1.4",
     "prettier": "^3.0.3",
     "semantic-release": "^22.0.5",
     "tailwind-merge": "1.14.0",
@@ -67,6 +73,7 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-plugin-dts": "^3.5.4",
+    "vitepress": "1.0.0-rc.20",
     "vue-eslint-parser": "^9.3.1",
     "vue-tsc": "^1.8.5"
   },
