@@ -7,9 +7,7 @@ type Props = {
 
 const props = defineProps<Props>()
 
-function getItem(key: string) {
-  return props.items[key as keyof typeof props.items]
-}
+const getItem = (key: string) => props.items[key as keyof typeof props.items]
 </script>
 
 <template>
