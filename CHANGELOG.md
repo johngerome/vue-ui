@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/johngerome/vue-ui/compare/v1.1.2...v1.1.3) (2023-09-26)
+
+
+### Bug Fixes
+
+* **button:** add ghost variant and remove link color variations ([4df00b7](https://github.com/johngerome/vue-ui/commit/4df00b799c5104bba0c74c500d01cfa31bc474c4))
+
 ## [1.1.2](https://github.com/johngerome/vue-ui/compare/v1.1.1...v1.1.2) (2023-09-26)
 
 
