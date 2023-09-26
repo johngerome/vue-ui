@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { ListLoop } from '@/components'
+import UiButton from '@/ui/Button.vue'
 </script>
 
 <template>
-  <ListLoop :items="['test 1', 'test 2']" />
-  <ListLoop :items="[{ key: ['key 1', 'key 2'] }]" />
+  <div class="space-y-8">
+    <ListLoop :items="['test 1', 'test 2']" />
+    <UiButton>UiButton</UiButton>
+  </div>
 </template>

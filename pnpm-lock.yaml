@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify/vue': ^4.1.1
   '@semantic-release/changelog': ^6.0.3
   '@semantic-release/git': ^10.0.1
   '@types/node': ^20.6.5
@@ -24,6 +25,7 @@ dependencies:
   vue: 3.3.4
 
 devDependencies:
+  '@iconify/vue': 4.1.1_vue@3.3.4
   '@semantic-release/changelog': 6.0.3_semantic-release@22.0.5
   '@semantic-release/git': 10.0.1_semantic-release@22.0.5
   '@types/node': 20.6.5
@@ -293,6 +295,19 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@iconify/types/2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
+    dev: true
+
+  /@iconify/vue/4.1.1_vue@3.3.4:
+    resolution: {integrity: sha512-RL85Bm/DAe8y6rT6pux7D2FJSiUEM/TPfyK7GrbAOfTSwrhvwJW+S5yijdGcmtXouA8MtuH9C7l4hiSE4mLMjg==}
+    peerDependencies:
+      vue: '>=3'
+    dependencies:
+      '@iconify/types': 2.0.0
+      vue: 3.3.4
+    dev: true
 
   /@jridgewell/gen-mapping/0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
