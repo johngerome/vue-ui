@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/johngerome/vue-ui/compare/v1.1.1...v1.1.2) (2023-09-26)
+
+
+### Bug Fixes
+
+* **button:** add support for cusom loading ui ([e51e600](https://github.com/johngerome/vue-ui/commit/e51e600320015745459ebbf3546cf8a1440b743f))
+
 ## [1.1.1](https://github.com/johngerome/vue-ui/compare/v1.1.0...v1.1.1) (2023-09-26)
 
 
