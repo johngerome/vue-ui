@@ -6,8 +6,8 @@ export const VARIANTS = {
     'border border-primary text-primary hover:bg-primary hover:text-gray-200',
   'secondary-outline':
     'border border-secondary text-secondary hover:bg-secondary hover:text-gray-200',
-  'primary-link': 'text-primary',
-  'secondary-link': 'text-secondary',
+  ghost: 'text-primary hover:bg-primary/10',
+  link: 'text-primary hover:underline',
 }
 export const SIZES = {
   sm: 'p-1 text-xs',
