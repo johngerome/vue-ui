@@ -39,6 +39,8 @@
     "access": "public"
   },
   "dependencies": {
+    "@zag-js/accordion": "^0.22.0",
+    "@zag-js/vue": "^0.22.0",
     "vue": "3.3.4"
   },
   "peerDependencies": {
