@@ -29,8 +29,7 @@ const theme = {
 
 ## Composition
 
-We recommend you to create a Button wrapper instead of using the Button directly.
-This way you can customize the appearance via theme or tailwind class.
+We highly recommend creating a Button wrapper instead of utilizing the Button component directly. Doing so will provide you with the flexibility to customize its appearance effortlessly through themes or Tailwind classes. This approach ensures greater control and consistency in your design.
 
 ::: code-group
 
