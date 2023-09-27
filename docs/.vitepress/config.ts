@@ -5,6 +5,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Vue UI',
   description: 'Exquisite UI built using Tailwind and Zag',
+  base: '/vue-ui',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
