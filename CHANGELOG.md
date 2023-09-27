@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/johngerome/vue-ui/compare/v1.1.6...v1.1.7) (2023-09-27)
+
+
+### Bug Fixes
+
+* **button:** fix sizes and custom loading ([e8a5aca](https://github.com/johngerome/vue-ui/commit/e8a5aca9119b4c955316fe7eb880470e325cc34d))
+
 ## [1.1.6](https://github.com/johngerome/vue-ui/compare/v1.1.5...v1.1.6) (2023-09-26)
 
 
