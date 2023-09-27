@@ -15,10 +15,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Components',
-        items: [
-          { text: 'Button', link: '/components/button' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
+        items: [{ text: 'Button', link: '/components/button' }],
       },
     ],
 
