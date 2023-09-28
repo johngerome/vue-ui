@@ -5,7 +5,7 @@ layout: home
 hero:
   name: 'Vue UI'
   text: 'Exquisite UI built using Tailwind and Zag'
-  tagline: Simple, Customizable and Beautiful.
+  tagline: Simple, Flexible, and Customizable.
   actions:
     - theme: brand
       text: Get Started
@@ -15,10 +15,10 @@ hero:
       link: https://github.com/johngerome/vue-ui
 
 features:
-  - title: Simple
+  - title: Tailwind + Zag
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Customizable
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Beautiful
+  - title: Flexible
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
