@@ -79,11 +79,11 @@ Use `variant` prop to change the appearance of the Button. Available variants ar
 
 ::: details Click me to view the code
 
-```html
-<button>Button</button>
-<button variant="outline">Button</button>
-<button variant="ghost">Button</button>
-<button variant="link">Button</button>
+```vue
+<Button>Button</Button>
+<Button variant="outline">Button</Button>
+<Button variant="ghost">Button</Button>
+<Button variant="link">Button</Button>
 ```
 
 :::
@@ -102,12 +102,12 @@ Use the `size` props to change the size of the Button. Available sizes are `sm`,
 
 ::: details Click me to view the code
 
-```html
-<button size="sm">Button</button>
-<button size="md">Button</button>
-<button size="lg">Button</button>
-<button size="xl">Button</button>
-<button size="2xl">Button</button>
+```vue
+<Button size="sm">Button</Button>
+<Button size="md">Button</Button>
+<Button size="lg">Button</Button>
+<Button size="xl">Button</Button>
+<Button size="2xl">Button</Button>
 ```
 
 :::
@@ -119,6 +119,9 @@ To override loading icon use template `#loading`.
 
 <div class="flex items-center space-x-2">
   <Button is-loading>Submitting</Button>
+  <Button class="flex-row-reverse space-x-0" is-loading>
+    <span class="mr-2">Submitting</span>
+  </Button>
   <Button is-loading></Button>
   <Button is-loading>
     <span class="mr-3">Submitting</span>
@@ -129,7 +132,7 @@ To override loading icon use template `#loading`.
       />
     </template>
   </Button>
-  <Button disabled use-custom-loading>
+  <Button is-disabled>
     <span>Submitting</span>
     <Icon
         icon="eos-icons:three-dots-loading"
@@ -140,19 +143,22 @@ To override loading icon use template `#loading`.
 
 ::: details Click me to view the code
 
-```html
-<button is-loading>Submitting</button>
-<button is-loading></button>
-<button is-loading>
+```vue
+<Button is-loading>Submitting</Button>
+<Button class="flex-row-reverse space-x-0" is-loading>
+  <span class="mr-2">Submitting</span>
+</Button>
+<Button is-loading></Button>
+<Button is-loading>
   <span class="mr-3">Submitting</span>
   <template #loading>
     <Icon icon="eos-icons:three-dots-loading" class="text-3xl" />
   </template>
-</button>
-<button disabled use-custom-loading>
+</Button>
+<Button is-disabled>
   <span>Submitting</span>
   <Icon icon="eos-icons:three-dots-loading" class="text-3xl" />
-</button>
+</Button>
 ```
 
 :::
@@ -193,8 +199,7 @@ export type Props = {
   theme?: typeof THEME
   size?: keyof (typeof THEME)['sizes']
   variant?: keyof (typeof THEME)['variants']
-  disabled?: boolean
+  isDisabled?: boolean
   isLoading?: boolean
-  useCustomLoading?: boolean
 }
 ```

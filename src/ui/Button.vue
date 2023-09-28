@@ -56,9 +56,7 @@ defineProps<Props>()
         <span class="mr-3">Button</span>
         <template #loading></template>
       </Button>
-      <Button class="flex-row-reverse" is-loading use-custom-loading>
-        Button...
-      </Button>
+      <Button class="flex-row-reverse" is-disabled> Button... </Button>
     </div>
   </div>
 </template>
