@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/johngerome/vue-ui/compare/v1.1.7...v1.1.8) (2023-09-28)
+
+
+### Bug Fixes
+
+* **button:** change disabled props to is-disabled and docs fixes ([9a7e2f8](https://github.com/johngerome/vue-ui/commit/9a7e2f818559dd3a3e5325df9f8784e5f9ab9ec8))
+
 ## [1.1.7](https://github.com/johngerome/vue-ui/compare/v1.1.6...v1.1.7) (2023-09-27)
 
 
