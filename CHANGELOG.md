@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/johngerome/vue-ui/compare/v1.1.8...v1.1.9) (2023-09-28)
+
+
+### Bug Fixes
+
+* index title ([4697215](https://github.com/johngerome/vue-ui/commit/46972156f3f66ba368c0507d5e422ccf20eddf78))
+
 ## [1.1.8](https://github.com/johngerome/vue-ui/compare/v1.1.7...v1.1.8) (2023-09-28)
 
 
