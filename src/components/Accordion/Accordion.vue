@@ -1,23 +1,31 @@
 <script lang="ts" setup>
-import * as accordion from '@zag-js/accordion'
-import { provide } from 'vue'
+import { computed } from 'vue'
 
-import { $api } from './providers'
+import { Props, Events } from './types'
 import useAccordion from './useAccordion'
 
-export type Props = {
-  option: accordion.Context
-}
+const emit = defineEmits<Events>()
 
 const props = defineProps<Props>()
-const { api } = useAccordion(props.option)
+const option = computed(() => props)
+const { api } = useAccordion({
+  ...option.value,
+  onValueChange(details) {
+    emit('onValueChange', details)
+  },
+  onFocusChange(details) {
+    emit('onFocusChange', details)
+  },
+})
 
-provide($api, api.value)
 defineExpose({ api })
 </script>
 
 <template>
-  <div v-bind="api.rootProps" class="divide-y divide-slate-200">
+  <div
+    v-bind="api.rootProps"
+    class="divide-y divide-slate-200 dark:divide-slate-200/10"
+  >
     <slot :api="api"></slot>
   </div>
 </template>

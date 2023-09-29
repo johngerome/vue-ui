@@ -7,12 +7,23 @@ import AccordionContent from '@/components/Accordion/AccordionContent.vue'
 
 // import AccordionItem from '@/components/Accordion/AccordionItem.vue'
 // const accordion = ref<InstanceType<typeof Accordion> | null>(null)
+
+function onValueChange(details: { value: string[] }) {
+  console.log(details)
+}
+function onFocusChange(details: { value: string | null }) {
+  console.log(details)
+}
 </script>
 
 <template>
   <Accordion
-    :option="{ id: 'accordion-1', collapsible: true }"
+    id="accordion-1"
+    :value="['item-2']"
+    collapsible
     v-slot="{ api }"
+    @on-value-change="onValueChange"
+    @on-focus-change="onFocusChange"
   >
     <div v-bind="api?.getItemProps({ value: 'item-1' })">
       <h3 class="flex">
