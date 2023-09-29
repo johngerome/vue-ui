@@ -1,18 +1,23 @@
 <script lang="ts" setup>
 import { cn } from '@/util/cn'
+import { useAttrs } from 'vue'
 
 type Item = Record<string, string | string[]>
 type Props = {
   items: Item | Item[] | string[] | string
 }
 
+const attrs = useAttrs()
 const props = defineProps<Props>()
 
 const getItem = (key: string) => props.items[key as keyof typeof props.items]
 </script>
 
 <template>
-  <ul v-if="props.items" :class="cn('mb-0 pl-4 list-none space-y-2')">
+  <ul
+    v-if="props.items"
+    :class="cn('mb-0 pl-4 list-none space-y-2', attrs?.class || '')"
+  >
     <template
       v-if="typeof props.items === 'object' && !Array.isArray(props.items)"
     >
