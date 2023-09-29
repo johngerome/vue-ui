@@ -1,19 +1,17 @@
 <script lang="ts" setup>
 import { Icon } from '@iconify/vue'
+// import { inject } from 'vue'
+// import { $api, $itemValue } from './providers'
 
-defineOptions({
-  inheritAttrs: false,
-})
+// const api = inject($api)
+// const value = inject($itemValue, '')
 </script>
 
 <template>
-  <h3 class="flex">
-    <button
-      v-bind="$attrs"
-      class="font-medium flex justify-between flex-1 py-4 text-left hover:underline [&[data-state=open]>svg]:rotate-180 transition-all"
-    >
-      <slot />
-      <Icon icon="tabler:chevron-down" class="text-gray-400 text-lg" />
-    </button>
-  </h3>
+  <button
+    class="font-medium flex justify-between flex-1 py-4 text-left hover:underline [&[data-state=open]>svg]:rotate-180 transition-all"
+  >
+    <slot />
+    <Icon icon="tabler:chevron-down" class="text-gray-400 text-lg" />
+  </button>
 </template>
