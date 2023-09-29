@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/johngerome/vue-ui/compare/v1.1.10...v1.1.11) (2023-09-29)
+
+
+### Bug Fixes
+
+* **ListLoop:** fix merging class issues ([5bc7577](https://github.com/johngerome/vue-ui/commit/5bc7577a41364e79e81f504259ab23a341fc551b))
+
 ## [1.1.10](https://github.com/johngerome/vue-ui/compare/v1.1.9...v1.1.10) (2023-09-29)
 
 
