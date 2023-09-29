@@ -34,9 +34,8 @@ export type Props = {
   theme?: typeof THEME
   size?: keyof (typeof THEME)['sizes']
   variant?: keyof (typeof THEME)['variants']
-  disabled?: boolean
+  isDisabled?: boolean
   isLoading?: boolean
-  useCustomLoading?: boolean
 }
 
 const attrs = useAttrs()
@@ -65,28 +64,25 @@ const loadingClass = computed(() =>
     :class="
       cn(
         'transition-colors flex items-center font-medium focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none border-solid space-x-3',
-        { [THEME.disabled]: props.disabled || props.isLoading },
+        { [THEME.disabled]: props.isDisabled || props.isLoading },
         attrs?.class || '',
         variantsClass,
         sizesClass,
       )
     "
-    :disabled="props.disabled || props.isLoading"
+    :disabled="props.isDisabled || props.isLoading"
   >
-    <template v-if="props.useCustomLoading"> <slot /> </template>
-    <template v-else>
-      <slot name="loading">
-        <Icon
-          v-show="props.isLoading"
-          icon="line-md:loading-twotone-loop"
-          :class="loadingClass"
-        />
-      </slot>
+    <slot name="loading">
+      <Icon
+        v-show="props.isLoading"
+        icon="line-md:loading-twotone-loop"
+        :class="loadingClass"
+      />
+    </slot>
 
-      <template v-if="$slots.default && props.isLoading">
-        <span><slot /></span>
-      </template>
-      <slot v-else />
+    <template v-if="$slots.default && props.isLoading">
+      <span><slot /></span>
     </template>
+    <slot v-else />
   </button>
 </template>

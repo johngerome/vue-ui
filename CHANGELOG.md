@@ -1,3 +1,31 @@
+## [1.1.11](https://github.com/johngerome/vue-ui/compare/v1.1.10...v1.1.11) (2023-09-29)
+
+
+### Bug Fixes
+
+* **ListLoop:** fix merging class issues ([5bc7577](https://github.com/johngerome/vue-ui/commit/5bc7577a41364e79e81f504259ab23a341fc551b))
+
+## [1.1.10](https://github.com/johngerome/vue-ui/compare/v1.1.9...v1.1.10) (2023-09-29)
+
+
+### Bug Fixes
+
+* **ListLoop:** fix merging of class names ([90d791a](https://github.com/johngerome/vue-ui/commit/90d791aa3027034c1a1fa950b954a1e67973047e))
+
+## [1.1.9](https://github.com/johngerome/vue-ui/compare/v1.1.8...v1.1.9) (2023-09-28)
+
+
+### Bug Fixes
+
+* index title ([4697215](https://github.com/johngerome/vue-ui/commit/46972156f3f66ba368c0507d5e422ccf20eddf78))
+
+## [1.1.8](https://github.com/johngerome/vue-ui/compare/v1.1.7...v1.1.8) (2023-09-28)
+
+
+### Bug Fixes
+
+* **button:** change disabled props to is-disabled and docs fixes ([9a7e2f8](https://github.com/johngerome/vue-ui/commit/9a7e2f818559dd3a3e5325df9f8784e5f9ab9ec8))
+
 ## [1.1.7](https://github.com/johngerome/vue-ui/compare/v1.1.6...v1.1.7) (2023-09-27)
 
 
