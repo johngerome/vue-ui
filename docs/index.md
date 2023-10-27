@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /components/button
+      link: /components/accordion
     - theme: alt
       text: View on Github
       link: https://github.com/johngerome/vue-ui

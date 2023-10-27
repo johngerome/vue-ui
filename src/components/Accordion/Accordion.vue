@@ -1,0 +1,36 @@
+<script lang="ts" setup>
+import { computed } from 'vue'
+
+import { Props, Events } from './types'
+import useAccordion from './useAccordion'
+
+const emit = defineEmits<Events>()
+
+const props = defineProps<Props>()
+const option = computed(() => props)
+const { api } = useAccordion({
+  ...option.value,
+  onValueChange(details) {
+    emit('onValueChange', details)
+  },
+  onFocusChange(details) {
+    emit('onFocusChange', details)
+  },
+})
+
+defineExpose({ api })
+</script>
+
+<template>
+  <div
+    v-bind="api.rootProps"
+    class="divide-y divide-slate-200 dark:divide-slate-200/10"
+  >
+    <slot
+      :api="api"
+      :get-item-props="api.getItemProps"
+      :get-item-content-props="api.getItemContentProps"
+      :get-item-trigger-props="api.getItemTriggerProps"
+    ></slot>
+  </div>
+</template>
