@@ -1,10 +1,5 @@
 <script lang="ts" setup>
 import { Icon } from '@iconify/vue'
-// import { inject } from 'vue'
-// import { $api, $itemValue } from './providers'
-
-// const api = inject($api)
-// const value = inject($itemValue, '')
 </script>
 
 <template>

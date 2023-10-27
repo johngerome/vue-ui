@@ -21,18 +21,28 @@ function onFocusChange(details: { value: string | null }) {
     id="accordion-1"
     :value="['item-2']"
     collapsible
-    v-slot="{ api }"
+    v-slot="{ getItemProps, getItemContentProps, getItemTriggerProps }"
     @on-value-change="onValueChange"
     @on-focus-change="onFocusChange"
   >
-    <div v-bind="api?.getItemProps({ value: 'item-1' })">
+    <div v-bind="getItemProps({ value: 'item-1' })">
+      <h3 class="flex">
+        <AccordionTrigger v-bind="getItemTriggerProps({ value: 'item-1' })">
+          Section 1
+        </AccordionTrigger>
+      </h3>
+      <AccordionContent v-bind="getItemContentProps({ value: 'item-1' })">
+        Lorem ipsum dolor sit
+      </AccordionContent>
+    </div>
+    <!-- <div v-bind="api?.getItemProps({ value: 'item-1' })">
       <h3 class="flex">
         <AccordionTrigger v-bind="api.getItemTriggerProps({ value: 'item-1' })">
           Section 1
         </AccordionTrigger>
       </h3>
 
-      <AccordionContent v-bind="api.getItemContentProps({ value: 'item-1' })">
+      <AccordionContent v-bind="getItemContentProps({ value: 'item-1' })">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
         inventore fugit nam quo saepe voluptas dolore assumenda!.
       </AccordionContent>
@@ -49,6 +59,6 @@ function onFocusChange(details: { value: string | null }) {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
         inventore fugit nam quo saepe voluptas dolore assumenda!.
       </AccordionContent>
-    </div>
+    </div> -->
   </Accordion>
 </template>

@@ -26,6 +26,11 @@ defineExpose({ api })
     v-bind="api.rootProps"
     class="divide-y divide-slate-200 dark:divide-slate-200/10"
   >
-    <slot :api="api"></slot>
+    <slot
+      :api="api"
+      :get-item-props="api.getItemProps"
+      :get-item-content-props="api.getItemContentProps"
+      :get-item-trigger-props="api.getItemTriggerProps"
+    ></slot>
   </div>
 </template>
