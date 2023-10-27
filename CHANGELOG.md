@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/johngerome/vue-ui/compare/v1.2.0...v1.2.1) (2023-10-27)
+
+
+### Bug Fixes
+
+* update components link to the first components of the list (accordion) ([0beb0e6](https://github.com/johngerome/vue-ui/commit/0beb0e690b5161f988a540fb37362be09187b444))
+* update components link to the first components of the list (accordion) ([#3](https://github.com/johngerome/vue-ui/issues/3)) ([7520f0b](https://github.com/johngerome/vue-ui/commit/7520f0b14bd778f5ea35d59e84e52672d9233bd8))
+
 # [1.2.0](https://github.com/johngerome/vue-ui/compare/v1.1.11...v1.2.0) (2023-10-27)
 
 
