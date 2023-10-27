@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/johngerome/vue-ui/compare/v1.1.11...v1.2.0) (2023-10-27)
+
+
+### Features
+
+* accordion component ([#2](https://github.com/johngerome/vue-ui/issues/2)) ([cd023e8](https://github.com/johngerome/vue-ui/commit/cd023e8b59c5a9e66772291915a5c2c3c9f82a12))
+
 ## [1.1.11](https://github.com/johngerome/vue-ui/compare/v1.1.10...v1.1.11) (2023-09-29)
 
 
