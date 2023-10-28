@@ -310,3 +310,20 @@ function onValueChange({ value }) {
 :::
 
 ### @on-focus-change
+
+::: details Code Example
+
+```vue
+<script setup>
+function onFocusChange({ value }) {
+  console.log(value)
+}
+</script>
+<template>
+  <Accordion id="accordion" v-slot="{ api }" @on-focus-change="onFocusChange">
+    <!-- ... -->
+  </Accordion>
+</template>
+```
+
+:::
