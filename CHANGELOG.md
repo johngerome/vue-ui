@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/johngerome/vue-ui/compare/v1.2.1...v1.2.2) (2023-10-28)
+
+
+### Bug Fixes
+
+* **accordion:** add theme configuration ([#4](https://github.com/johngerome/vue-ui/issues/4)) ([1b7d97e](https://github.com/johngerome/vue-ui/commit/1b7d97e9dd0f8f14ce6d537971f4139bc3ddd62e))
+
 ## [1.2.1](https://github.com/johngerome/vue-ui/compare/v1.2.0...v1.2.1) (2023-10-27)
 
 
