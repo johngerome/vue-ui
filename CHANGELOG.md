@@ -1,3 +1,15 @@
+## [1.2.5](https://github.com/johngerome/vue-ui/compare/v1.2.4...v1.2.5) (2023-11-09)
+
+
+### Bug Fixes
+
+* add persist-credentials ([#14](https://github.com/johngerome/vue-ui/issues/14)) ([a89cc68](https://github.com/johngerome/vue-ui/commit/a89cc68298559394cb859bd2634d6925f334cced))
+* fix release CI ([#13](https://github.com/johngerome/vue-ui/issues/13)) ([b33ed5b](https://github.com/johngerome/vue-ui/commit/b33ed5bbab27f3265dbd5b643a018bf86a6bb0fc))
+* release ([3715744](https://github.com/johngerome/vue-ui/commit/3715744e6ed9d11bd87b07b63996b1518a46cce3))
+* run lint on push ([94fc2af](https://github.com/johngerome/vue-ui/commit/94fc2afbbef747945c90719464070e1bb3d829b4))
+* run release after lint ([d7c4716](https://github.com/johngerome/vue-ui/commit/d7c471613df06d6688c16716983ecab967b2e197))
+* run release after lint ([#12](https://github.com/johngerome/vue-ui/issues/12)) ([f38d536](https://github.com/johngerome/vue-ui/commit/f38d536ab8b20f923c2676ed16982b76e1440b85))
+
 ## [1.2.2](https://github.com/johngerome/vue-ui/compare/v1.2.1...v1.2.2) (2023-10-28)
 
 
