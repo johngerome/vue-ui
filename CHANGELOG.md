@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/johngerome/vue-ui/compare/v1.2.5...v1.2.6) (2023-11-09)
+
+
+### Bug Fixes
+
+* build docs ([d486209](https://github.com/johngerome/vue-ui/commit/d48620955468b125238af57aaffec8927318f2e5))
+
 ## [1.2.5](https://github.com/johngerome/vue-ui/compare/v1.2.4...v1.2.5) (2023-11-09)
 
 
