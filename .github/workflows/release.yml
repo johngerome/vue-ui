@@ -1,11 +1,10 @@
 name: Release
 
 on:
-  workflow_run:
-    workflows: ['lint']
-    branches: [main]
-    types:
-      - completed
+  push:
+    branches:
+      - main
+      - beta
 
 permissions:
   contents: write
