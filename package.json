@@ -90,6 +90,7 @@
   "author": "johngerome <johngerome@gmail.com>",
   "auto": {
     "plugins": [
+      "protected-branch",
       "npm",
       "conventional-commits",
       "released"
