@@ -9,7 +9,7 @@ Accordion is an element that allows content to expand and collapse, typically us
 ## Import
 
 ```ts
-import { Accordion } from '@johngerome/vue-ui'
+import { Accordion } from '@johngerome/vue-ui/accordion'
 ```
 
 ## Usage
@@ -19,10 +19,7 @@ import { Accordion } from '@johngerome/vue-ui'
 <script setup>
 import { ref, watchEffect } from 'vue'
 
-import Accordion from '@/components/Accordion/Accordion.vue'
-import AccordionTrigger from '@/components/Accordion/AccordionTrigger.vue'
-import AccordionContent from '@/components/Accordion/AccordionContent.vue'
-import useAccordion from '@/components/Accordion/useAccordion'
+import { Accordion, AccordionTrigger, AccordionContent, useAccordion } from '@/components/Accordion/accordion.ts'
 
 const { api: accordionApi } = useAccordion({
   id: 'accordion',
@@ -100,6 +97,8 @@ Using [Zag](https://zagjs.com/components/react/accordion) under the hood.
 
 ```vue
 <script setup>
+import { useAccordion } from '@johngerome/vue-ui/accordion'
+
 const { api } = useAccordion({
   id: 'accordion',
 })
