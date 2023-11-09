@@ -22,6 +22,9 @@ devDependencies:
   '@auto-it/conventional-commits':
     specifier: ^11.0.4
     version: 11.0.4(@types/node@20.6.5)(typescript@5.2.2)
+  '@auto-it/npm':
+    specifier: ^11.0.4
+    version: 11.0.4(@types/node@20.6.5)(typescript@5.2.2)
   '@iconify/vue':
     specifier: ^4.1.1
     version: 4.1.1(vue@3.3.4)
