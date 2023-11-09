@@ -10,10 +10,11 @@ export default defineConfig({
     copyPublicDir: false,
     lib: {
       // Could also be a dictionary or array of multiple entry points
-      entry: resolve(__dirname, 'src/components/index.ts'),
+      entry: [
+        resolve(__dirname, 'src/components/index.ts'),
+        resolve(__dirname, 'src/components/Accordion/accordion.ts'),
+      ],
       name: 'VueUI',
-      // the proper extensions will be added
-      fileName: 'vue-ui',
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
